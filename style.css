@@ -12,18 +12,16 @@ html {
 
 body {
     margin: 0;
-    background-color: #303030;
+    background-color: #f8f6f0;
     font-family: 'Montserrat', sans-serif;
     color: #171717;
 }
 
 .website {
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    margin: 0;
     background-color: #f8f6f0;
 }
-
 
 
 /* =========================================
@@ -32,6 +30,7 @@ body {
 
 .hero {
     position: relative;
+    width: 100%;
     height: 510px;
     overflow: hidden;
 }
@@ -48,6 +47,7 @@ body {
     animation: heroImageIn 1.2s ease-out forwards;
 }
 
+
 /* =========================================
    NAVIGATION
 ========================================= */
@@ -56,7 +56,7 @@ body {
 
     position: absolute;
 
-    top: 0;
+    top: 5px;
     left: 0;
 
     width: 100%;
@@ -67,12 +67,13 @@ body {
 
     align-items: center;
 
-    gap: 30px;
+    gap: 120px;
 
-    padding: 22px 30px;
+    padding: 30px 60px;
 
     z-index: 5;
 }
+
 
 .navbar a {
 
@@ -89,6 +90,7 @@ body {
     white-space: nowrap;
 
 }
+
 
 .navbar a::after {
 
@@ -110,6 +112,7 @@ body {
 
 }
 
+
 .navbar a:hover::after,
 .navbar a.active::after {
 
@@ -117,61 +120,45 @@ body {
 
 }
 
-
 /* =========================================
    HERO CONTENT
 ========================================= */
 
 .hero-content {
-
     position: absolute;
 
-    left: 45px;
-
+    left: 5%;
     top: 120px;
 
     width: 240px;
 
     color: white;
-
 }
 
 .hero-content h1 {
-
     margin: 0 0 28px;
 
     font-size: 28px;
-
     line-height: 1.12;
-
     font-weight: 700;
-
 }
 
 .hero-content h1 span {
-
     color: #efd39e;
 
     font-family: 'Playfair Display', serif;
-
     font-style: italic;
-
 }
 
 .hero-content p {
-
     margin: 0 0 20px;
 
     font-size: 12px;
-
     line-height: 2.1;
-
     font-weight: 400;
-
 }
 
 .hero-button {
-
     display: inline-block;
 
     padding: 10px 16px;
@@ -181,44 +168,34 @@ body {
     background-color: #8fb9bc;
 
     color: white;
-
     text-decoration: none;
 
     font-size: 12px;
-
 }
-
 
 /* =========================================
    INTRO
 ========================================= */
 
 .intro {
-
     display: flex;
 
     gap: 45px;
 
-    padding: 35px 55px;
+    padding: 35px 6%;
 
     background-color: #f8f6f0;
-
 }
 
 .intro-column {
-
     flex: 1;
-
 }
 
 .intro p {
-
     margin: 0;
 
     font-size: 12px;
-
     line-height: 2.1;
-
 }
 
 
@@ -227,69 +204,51 @@ body {
 ========================================= */
 
 .welcome {
-
     background-color: #f1e8d7;
-
 }
 
 .welcome-content {
-
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 45px;
 
-    padding: 45px 55px;
-
+    padding: 45px 6%;
 }
 
 .welcome-text {
-
     width: 42%;
-
 }
 
 .label {
-
     margin: 0 0 28px;
 
     color: #4f7774;
 
     font-size: 13px;
-
     font-weight: 700;
-
 }
 
 .welcome h2 {
-
     margin: 0 0 20px;
 
     font-size: 18px;
-
     line-height: 1.40;
-
 }
 
 .description {
-
     margin: 0 0 25px;
 
     font-size: 13px;
-
     line-height: 2.1;
-
 }
 
 .explore-button {
-
     display: inline-flex;
 
     align-items: center;
-
     gap: 12px;
 
     padding: 9px 15px;
@@ -299,19 +258,14 @@ body {
     background-color: #8fb9bc;
 
     color: white;
-
     text-decoration: none;
 
     font-size: 12px;
-
 }
 
 .explore-button span {
-
     font-size: 12px;
-
 }
-
 
 
 /* =========================================
@@ -319,7 +273,6 @@ body {
 ========================================= */
 
 .gallery {
-
     width: 55%;
 
     display: grid;
@@ -331,17 +284,13 @@ body {
     padding: 6px;
 
     background-color: #e9d8b9;
-
 }
 
 .gallery-item {
-
     text-align: center;
-
 }
 
 .gallery-item img {
-
     width: 100%;
 
     display: block;
@@ -349,19 +298,14 @@ body {
     aspect-ratio: 1 / 0.82;
 
     object-fit: cover;
-
 }
 
 .gallery-item p {
-
     margin: 4px 0 0;
 
     font-size: 11px;
-
     font-weight: 500;
-
 }
-
 
 
 /* =========================================
@@ -369,15 +313,12 @@ body {
 ========================================= */
 
 .features {
-
-    padding: 35px 44px 40px;
+    padding: 35px 6% 40px;
 
     background-color: #f8f6f0;
-
 }
 
 .features-title {
-
     margin: 0 0 35px;
 
     text-align: center;
@@ -385,21 +326,16 @@ body {
     color: #5c817d;
 
     font-size: 14px;
-
     font-weight: 700;
-
 }
 
 .feature-container {
-
     display: flex;
 
     gap: 18px;
-
 }
 
 .feature-card {
-
     flex: 1;
 
     min-height: 155px;
@@ -407,35 +343,26 @@ body {
     padding: 18px;
 
     background-color: #f1e9dc;
-
 }
 
 .feature-card h3 {
-
     margin: 0 0 17px;
 
     font-size: 12px;
-
     line-height: 1.35;
-
 }
 
 .feature-card p {
-
     margin: 0 0 20px;
 
     font-size: 12px;
-
     line-height: 1.7;
-
 }
 
 .feature-card a {
-
     display: inline-flex;
 
     gap: 8px;
-
     align-items: center;
 
     padding: 7px 10px;
@@ -445,17 +372,13 @@ body {
     background-color: #8fb9bc;
 
     color: white;
-
     text-decoration: none;
 
     font-size: 12px;
-
 }
 
 .feature-card a span {
-
     font-size: 12px;
-
 }
 
 
@@ -464,14 +387,11 @@ body {
 ========================================= */
 
 .get-started {
-
     background-color: #f1e8d7;
-
 }
 
 .get-started-title {
-
-    margin: 10px 50px;
+    margin: 10px 6%;
 
     padding: 25px 0 8px;
 
@@ -482,33 +402,23 @@ body {
     color: #5c817d;
 
     font-size: 14px;
-
     font-weight: 700;
-
 }
 
 .information {
-
-    padding: 20px 50px 40px;
-
+    padding: 20px 6% 40px;
 }
 
 .information p {
-
     margin: 0 0 18px;
 
     font-size: 12px;
-
     line-height: 2.3;
-
 }
 
 .information p:last-child {
-
     margin-bottom: 0;
-
 }
-
 
 
 /* =========================================
@@ -516,24 +426,49 @@ body {
 ========================================= */
 
 .footer {
-
     padding: 18px;
 
     text-align: center;
 
     background-color: #f8f6f0;
-
 }
 
 .footer p {
-
     margin: 0;
 
     font-size: 8px;
 
     color: #666;
+}
+
+/* =========================================
+   JAVASCRIPT SCROLL REVEAL
+========================================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 
 }
+
+
+.reveal.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
 
 @keyframes heroImageIn {
 
@@ -545,6 +480,68 @@ body {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .navbar {
+
+        gap: 50px;
+
+        padding: 30px 40px;
+
+    }
+
+    .navbar a {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        flex-wrap: wrap;
+
+        gap: 14px 30px;
+
+        padding: 22px 25px;
+
+    }
+
+    .navbar a {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .navbar a {
+
+        font-size: 8px;
+
     }
 
 }
