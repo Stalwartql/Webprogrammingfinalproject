@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Photo Analyser | IranScape</title>
+
+    <link rel="stylesheet" href="ai.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="../index.html">
+                HOME
+            </a>
+
+            <a href="../Destination page/index.html">
+                DESTINATIONS
+            </a>
+
+            <a href="../Agency page/index.html">
+                TRAVEL AGENCIES & HOTELS
+            </a>
+
+            <a href="../Blog page/index.html">
+                BLOG
+            </a>
+
+            <a href="index.html" class="active">
+                AI PHOTO ANALYSER
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- =========================================
+             INTRO
+        ========================================== -->
+
+        <section class="analyser-intro">
+
+            <p class="analyser-label">
+                AI PHOTO ANALYSER
+            </p>
+
+            <h1>
+                Discover more<br>
+                from your photos
+            </h1>
+
+            <p class="intro-text">
+                Upload a photograph and let AI explore what
+                can be seen in it, from landscapes and architecture
+                to places, details, and visual impressions.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ANALYSER
+        ========================================== -->
+
+        <section class="analyser-section">
+
+
+            <div class="upload-box" id="uploadBox">
+
+                <div class="upload-content">
+
+                    <div class="upload-icon">
+                        +
+                    </div>
+
+                    <h2>
+                        Upload your photo
+                    </h2>
+
+                    <p>
+                        Choose a photo from your device to begin.
+                    </p>
+
+                    <label for="photoInput" class="upload-button">
+                        CHOOSE PHOTO
+                    </label>
+
+                    <input
+                        type="file"
+                        id="photoInput"
+                        accept="image/*"
+                    >
+
+                    <p class="file-note">
+                        JPG, JPEG, PNG or WEBP
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PREVIEW
+            ========================================== -->
+
+            <div class="preview-area" id="previewArea">
+
+                <div class="preview-image-box">
+
+                    <img
+                        id="previewImage"
+                        src=""
+                        alt="Selected photo"
+                    >
+
+                </div>
+
+                <div class="preview-info">
+
+                    <h2>
+                        Your photo
+                    </h2>
+
+                    <p id="fileName">
+                        Photo selected.
+                    </p>
+
+                    <button
+                        id="analyseButton"
+                        class="analyse-button"
+                    >
+                        ANALYZE PHOTO
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 LOADING
+            ========================================== -->
+
+            <div
+                class="loading-area"
+                id="loadingArea"
+            >
+
+                <div class="loading-circle"></div>
+
+                <p>
+                    Analyzing your photo...
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 RESULT
+            ========================================== -->
+
+            <div
+                class="result-area"
+                id="resultArea"
+            >
+
+                <p class="result-label">
+                    AI ANALYSIS
+                </p>
+
+                <h2>
+                    ANALYSIS RESULTS
+                </h2>
+
+                <div
+                    class="result-text"
+                    id="resultText"
+                ></div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <p>
+            IRANSCAPE
+        </p>
+
+    </footer>
+
+
+    <script src="ai.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,550 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #303030;
+    font-family: 'Montserrat', sans-serif;
+    color: #171717;
+}
+
+.website {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f8f6f0;
+}
+
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+    height: 510px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    opacity: 0;
+    transform: scale(1.02);
+
+    animation: heroImageIn 1.2s ease-out forwards;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 22px 30px;
+
+    z-index: 5;
+}
+
+.navbar a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    position: relative;
+
+    white-space: nowrap;
+
+}
+
+.navbar a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 1px;
+
+    background-color: white;
+
+    transition: width 0.3s ease;
+
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+
+    width: 100%;
+
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+
+    position: absolute;
+
+    left: 45px;
+
+    top: 120px;
+
+    width: 240px;
+
+    color: white;
+
+}
+
+.hero-content h1 {
+
+    margin: 0 0 28px;
+
+    font-size: 28px;
+
+    line-height: 1.12;
+
+    font-weight: 700;
+
+}
+
+.hero-content h1 span {
+
+    color: #efd39e;
+
+    font-family: 'Playfair Display', serif;
+
+    font-style: italic;
+
+}
+
+.hero-content p {
+
+    margin: 0 0 20px;
+
+    font-size: 12px;
+
+    line-height: 2.1;
+
+    font-weight: 400;
+
+}
+
+.hero-button {
+
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    border-radius: 20px;
+
+    background-color: #8fb9bc;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro {
+
+    display: flex;
+
+    gap: 45px;
+
+    padding: 35px 55px;
+
+    background-color: #f8f6f0;
+
+}
+
+.intro-column {
+
+    flex: 1;
+
+}
+
+.intro p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 2.1;
+
+}
+
+
+/* =========================================
+   WELCOME SECTION
+========================================= */
+
+.welcome {
+
+    background-color: #f1e8d7;
+
+}
+
+.welcome-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 45px;
+
+    padding: 45px 55px;
+
+}
+
+.welcome-text {
+
+    width: 42%;
+
+}
+
+.label {
+
+    margin: 0 0 28px;
+
+    color: #4f7774;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+.welcome h2 {
+
+    margin: 0 0 20px;
+
+    font-size: 18px;
+
+    line-height: 1.40;
+
+}
+
+.description {
+
+    margin: 0 0 25px;
+
+    font-size: 13px;
+
+    line-height: 2.1;
+
+}
+
+.explore-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    background-color: #8fb9bc;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+.explore-button span {
+
+    font-size: 12px;
+
+}
+
+
+
+/* =========================================
+   IMAGE GALLERY
+========================================= */
+
+.gallery {
+
+    width: 55%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    padding: 6px;
+
+    background-color: #e9d8b9;
+
+}
+
+.gallery-item {
+
+    text-align: center;
+
+}
+
+.gallery-item img {
+
+    width: 100%;
+
+    display: block;
+
+    aspect-ratio: 1 / 0.82;
+
+    object-fit: cover;
+
+}
+
+.gallery-item p {
+
+    margin: 4px 0 0;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+}
+
+
+
+/* =========================================
+   MORE THAN A DESTINATION
+========================================= */
+
+.features {
+
+    padding: 35px 44px 40px;
+
+    background-color: #f8f6f0;
+
+}
+
+.features-title {
+
+    margin: 0 0 35px;
+
+    text-align: center;
+
+    color: #5c817d;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+.feature-container {
+
+    display: flex;
+
+    gap: 18px;
+
+}
+
+.feature-card {
+
+    flex: 1;
+
+    min-height: 155px;
+
+    padding: 18px;
+
+    background-color: #f1e9dc;
+
+}
+
+.feature-card h3 {
+
+    margin: 0 0 17px;
+
+    font-size: 12px;
+
+    line-height: 1.35;
+
+}
+
+.feature-card p {
+
+    margin: 0 0 20px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+.feature-card a {
+
+    display: inline-flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+    padding: 7px 10px;
+
+    border-radius: 20px;
+
+    background-color: #8fb9bc;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+.feature-card a span {
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   GET STARTED
+========================================= */
+
+.get-started {
+
+    background-color: #f1e8d7;
+
+}
+
+.get-started-title {
+
+    margin: 10px 50px;
+
+    padding: 25px 0 8px;
+
+    border-top: 1px solid #b8c5c2;
+
+    text-align: center;
+
+    color: #5c817d;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+.information {
+
+    padding: 20px 50px 40px;
+
+}
+
+.information p {
+
+    margin: 0 0 18px;
+
+    font-size: 12px;
+
+    line-height: 2.3;
+
+}
+
+.information p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    padding: 18px;
+
+    text-align: center;
+
+    background-color: #f8f6f0;
+
+}
+
+.footer p {
+
+    margin: 0;
+
+    font-size: 8px;
+
+    color: #666;
+
+}
+
+@keyframes heroImageIn {
+
+    from {
+        opacity: 0;
+        transform: scale(1.03);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
