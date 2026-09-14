@@ -107,8 +107,6 @@ body {
 
     margin: 55px auto 45px;
 
-    font-family: "Playfair Display", serif;
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -118,6 +116,8 @@ body {
 
     column-gap: 25px;
     row-gap: 30px;
+
+    font-family: "Playfair Display", serif;
 }
 
 
@@ -138,11 +138,6 @@ body {
 
     text-align: center;
 }
-
-
-/* =========================================
-   BODY TEXT / PARAGRAPHS
-========================================= */
 
 .body-line {
     width: 100%;
@@ -648,4 +643,36 @@ body {
     .destination-image {
         height: 190px;
     }
+}
+
+
+/* =========================================
+   CENTER DESTINATION INTRO
+========================================= */
+
+.destination-heading {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 20px auto;
+
+    padding: 0 40px;
+
+    text-align: center;
+}
+
+.destination-heading .destination-title {
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destination-heading .body-line {
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
 }
